@@ -46,13 +46,14 @@
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
-      <a-nft
+      <!--a-nft
         type="nft"
         url="https://ruslankoynov.github.io/images/twins"
         smooth="true"
         smoothCount="10"
         smoothTolerance=".01"
-        smoothThreshold="5">
+        smoothThreshold="5"-->
+      <a-marker preset='hiro'>
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
           <a-entity
           gltf-model="https://ruslankoynov.github.io/images/Bee.glb"
@@ -61,7 +62,8 @@
           >
             
           </a-entity>
-      </a-nft>
+        </a-marker>
+      <!--/a-nft-->
       <!-- static camera that moves according to the device movemenents -->
       <a-entity camera></a-entity>
     </a-scene>
