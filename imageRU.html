@@ -55,6 +55,21 @@
                 <a-box scale="100 100 30" position="-20 -20 20" material="opacity: 0.9;">
                 <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
                 </a-box>
+                <a-box color="tomato" depth="2" height="2" width="2">
+        <a-animation attribute="rotation"
+               dur="3000"
+               to="0 360 0"
+               repeat="indefinite">
+        </a-animation>
+        <a-animation attribute="position"
+               dur="3000"
+               from="-5 0 0"
+               to="5 0 0"
+               repeat="indefinite">
+        </a-animation>
+       <a-animation attribute="material.color" from="blue" to="red" dur="3000" repeat="indefinite"></a-animation>
+
+     </a-box>
             </a-nft>
             <!-- static camera that moves according to the device movemenents -->
             <a-entity camera></a-entity>
